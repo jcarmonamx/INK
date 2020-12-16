@@ -6,7 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+use Tymon\JWTAuth\Contracts\JWTSubject;
+
+class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
@@ -16,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'fecha_nacimiento', 'estatura', 'peso', 'complexion', 'fruta', 'agua', 'carne_roja', 'cereales', 'carne_blanca', 'verduras', 'azucares', 'chatarra'
     ];
 
     /**
@@ -35,5 +37,31 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'fruta' => 'integer',
+        'agua' => 'integer',
+        'carne_roja' => 'integer',
+        'cereales' => 'integer',
+        'carne_blanca' => 'integer',
+        'verduras' => 'integer',
+        'azucares' => 'integer',
+        'chatarra' => 'integer'
     ];
+
+    /**
+     * Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier() {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims() {
+        return [];
+    }
 }

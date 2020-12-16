@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::post('/login', 'PublicController@login');
+//Route::get('logout', 'PublicController@logout')->name('logout');
+
 Route::get('/', function () {
     return view('welcome');
 });
