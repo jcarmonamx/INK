@@ -33,6 +33,7 @@ class CreateUsersTable extends Migration
             $table->boolean('verduras')->default('0');
             $table->boolean('azucares')->default('0');
             $table->boolean('chatarra')->default('0');
+            $table->enum('condicion', ['pesima', 'mala', 'promedio', 'buena', 'excelente']);
             $table->rememberToken();
             $table->timestamps();
         });

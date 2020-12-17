@@ -33,6 +33,7 @@ class UsersTableSeeder extends Seeder
                 'verduras' => '0',
                 'azucares' => '1',
                 'chatarra' => '1',
+                'condicion' => 'mala'
             ]
         ]);
     }

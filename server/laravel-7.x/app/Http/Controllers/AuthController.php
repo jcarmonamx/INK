@@ -64,6 +64,7 @@ class AuthController extends Controller
             'verduras' => 'required|boolean',
             'azucares' => 'required|boolean',
             'chatarra' => 'required|boolean',
+            'condicion' => 'required|string'
         ]);
 
         if($validator->fails()){
