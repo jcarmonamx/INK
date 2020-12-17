@@ -28,6 +28,7 @@ class Structs {
         let verduras:Int
         let azucares:Int
         let chatarra:Int
+        let condicion:String
     }
     
 }

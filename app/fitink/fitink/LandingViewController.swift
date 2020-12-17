@@ -10,10 +10,9 @@ import UIKit
 class LandingViewController: UIViewController {
 
     /*
-     * MARK: Outless
+     * MARK: Outlets
      */
-    @IBAction func MiPerfilAction(_ sender: Any) {
-    }
+
     @IBAction func ConsultarSaludAction(_ sender: Any) {
     }
     /*@IBAction func CerrarSesionAction(_ sender: Any) {
@@ -46,5 +45,16 @@ class LandingViewController: UIViewController {
         // Show the Navigation Bar
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    /*
+     * Se dispara al activar el segue
+     */
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LandingToProfile" {
+        
+        }
+        
+        
+    }*/
 
 }
