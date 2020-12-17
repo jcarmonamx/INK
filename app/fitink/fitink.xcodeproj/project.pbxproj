@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FBC927BBE729859340DF518 /* Pods_fitink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13780F3650267BD18D5962EB /* Pods_fitink.framework */; };
+		6433DC2E258ACB720015324D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6433DC2D258ACB720015324D /* AuthViewController.swift */; };
+		6433DC32258ACDFA0015324D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6433DC31258ACDFA0015324D /* TextField.swift */; };
+		6433DC35258ACED60015324D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6433DC34258ACED60015324D /* Util.swift */; };
+		6433DC3C258AD4E50015324D /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6433DC3B258AD4E50015324D /* Responder.swift */; };
+		64400ABE258AE24300EF6336 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400ABD258AE24300EF6336 /* ActivityIndicator.swift */; };
+		64400AC7258AE8F300EF6336 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400AC6258AE8F300EF6336 /* Structs.swift */; };
+		64400ACD258AF3BE00EF6336 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */; };
+		64400AD1258AF57700EF6336 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400AD0258AF57700EF6336 /* LandingViewController.swift */; };
 		64E6BB2225888C5300053C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6BB2125888C5300053C9B /* AppDelegate.swift */; };
 		64E6BB2425888C5300053C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6BB2325888C5300053C9B /* SceneDelegate.swift */; };
 		64E6BB2625888C5300053C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6BB2525888C5300053C9B /* ViewController.swift */; };
@@ -16,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13780F3650267BD18D5962EB /* Pods_fitink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADE1791F8D1CABE88148847 /* Pods-fitink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitink.release.xcconfig"; path = "Target Support Files/Pods-fitink/Pods-fitink.release.xcconfig"; sourceTree = "<group>"; };
+		6433DC2D258ACB720015324D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		6433DC31258ACDFA0015324D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		6433DC34258ACED60015324D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		6433DC3B258AD4E50015324D /* Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
+		64400ABD258AE24300EF6336 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		64400AC6258AE8F300EF6336 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		64400AD0258AF57700EF6336 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		64E6BB1E25888C5300053C9B /* fitink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E6BB2125888C5300053C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E6BB2325888C5300053C9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +43,7 @@
 		64E6BB2A25888C5400053C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E6BB2D25888C5400053C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E6BB2F25888C5400053C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4376A17125771E425CB8AEA /* Pods-fitink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitink.debug.xcconfig"; path = "Target Support Files/Pods-fitink/Pods-fitink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBC927BBE729859340DF518 /* Pods_fitink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A8425A718C44BF79748E490 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4376A17125771E425CB8AEA /* Pods-fitink.debug.xcconfig */,
+				2ADE1791F8D1CABE88148847 /* Pods-fitink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		64E6BB1525888C5300053C9B = {
 			isa = PBXGroup;
 			children = (
+				64400AC6258AE8F300EF6336 /* Structs.swift */,
+				64400ABD258AE24300EF6336 /* ActivityIndicator.swift */,
+				6433DC3B258AD4E50015324D /* Responder.swift */,
+				6433DC31258ACDFA0015324D /* TextField.swift */,
+				6433DC34258ACED60015324D /* Util.swift */,
 				64E6BB2025888C5300053C9B /* fitink */,
 				64E6BB1F25888C5300053C9B /* Products */,
+				5A8425A718C44BF79748E490 /* Pods */,
+				9FC0D9A29D2D3F258656E48B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				64E6BB2525888C5300053C9B /* ViewController.swift */,
+				6433DC2D258ACB720015324D /* AuthViewController.swift */,
+				64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */,
+				64400AD0258AF57700EF6336 /* LandingViewController.swift */,
 				64E6BB2725888C5300053C9B /* Main.storyboard */,
 				64E6BB2125888C5300053C9B /* AppDelegate.swift */,
 				64E6BB2325888C5300053C9B /* SceneDelegate.swift */,
@@ -67,6 +107,14 @@
 			path = fitink;
 			sourceTree = "<group>";
 		};
+		9FC0D9A29D2D3F258656E48B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13780F3650267BD18D5962EB /* Pods_fitink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E6BB3225888C5400053C9B /* Build configuration list for PBXNativeTarget "fitink" */;
 			buildPhases = (
+				2A8366157351B22D5E2C70F8 /* [CP] Check Pods Manifest.lock */,
 				64E6BB1A25888C5300053C9B /* Sources */,
 				64E6BB1B25888C5300053C9B /* Frameworks */,
 				64E6BB1C25888C5300053C9B /* Resources */,
+				963435CF8E4C1ADF39723FD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +182,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A8366157351B22D5E2C70F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		963435CF8E4C1ADF39723FD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitink/Pods-fitink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitink/Pods-fitink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitink/Pods-fitink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64E6BB1A25888C5300053C9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64400AC7258AE8F300EF6336 /* Structs.swift in Sources */,
+				64400ACD258AF3BE00EF6336 /* RegisterViewController.swift in Sources */,
+				64400AD1258AF57700EF6336 /* LandingViewController.swift in Sources */,
+				6433DC2E258ACB720015324D /* AuthViewController.swift in Sources */,
+				6433DC35258ACED60015324D /* Util.swift in Sources */,
 				64E6BB2625888C5300053C9B /* ViewController.swift in Sources */,
 				64E6BB2225888C5300053C9B /* AppDelegate.swift in Sources */,
+				64400ABE258AE24300EF6336 /* ActivityIndicator.swift in Sources */,
+				6433DC3C258AD4E50015324D /* Responder.swift in Sources */,
+				6433DC32258ACDFA0015324D /* TextField.swift in Sources */,
 				64E6BB2425888C5300053C9B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +383,7 @@
 		};
 		64E6BB3325888C5400053C9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4376A17125771E425CB8AEA /* Pods-fitink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +404,7 @@
 		};
 		64E6BB3425888C5400053C9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADE1791F8D1CABE88148847 /* Pods-fitink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

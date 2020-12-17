@@ -12,7 +12,7 @@
         <!--Login-->
         <scene sceneID="Fpr-wO-tQz">
             <objects>
-                <viewController id="7wG-wW-wUX" sceneMemberID="viewController">
+                <viewController id="7wG-wW-wUX" customClass="AuthViewController" customModule="fitink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lG9-bv-lDD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                 <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Iniciar Sesión con Facebook" image="fb_icon"/>
                             </button>
-                            <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-tN-czh">
+                            <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="zonademanel@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-tN-czh">
                                 <rect key="frame" x="20" y="311" width="280" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="iMS-Y7-LQ4"/>
@@ -41,8 +41,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7wG-wW-wUX" id="b0b-az-ied"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nWC-vJ-3yy">
+                            <textField opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nWC-vJ-3yy">
                                 <rect key="frame" x="20" y="359" width="280" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="Amh-ec-DMI"/>
@@ -50,6 +53,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7wG-wW-wUX" id="pSN-24-8IR"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1br-bm-Hyy">
                                 <rect key="frame" x="30" y="409.5" width="260" height="37"/>
@@ -61,6 +67,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Iniciar Sesión"/>
+                                <connections>
+                                    <action selector="IniciarSesion:" destination="7wG-wW-wUX" eventType="touchUpInside" id="2ft-6t-uHU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ó" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiT-GX-cPA">
                                 <rect key="frame" x="147.5" y="273.5" width="25" height="21"/>
@@ -105,8 +114,8 @@
                                     <segue destination="dAx-Gj-zA7" kind="show" id="bgI-KK-y0D"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-M2-rTV">
-                                <rect key="frame" x="30" y="492.5" width="260" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jy6-M2-rTV">
+                                <rect key="frame" x="30" y="492.5" width="260" height="0.0"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,17 +150,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="bkt-fC-Ati"/>
                     <connections>
-                        <segue destination="gRc-Sg-Ol2" kind="show" id="Tha-8l-lF9"/>
+                        <outlet property="Email" destination="AYm-tN-czh" id="rLs-DR-Qh8"/>
+                        <outlet property="ErrorMessage" destination="Jy6-M2-rTV" id="s22-TE-szQ"/>
+                        <outlet property="Password" destination="nWC-vJ-3yy" id="fBI-PU-xcP"/>
+                        <segue destination="gRc-Sg-Ol2" kind="show" identifier="LoginToLanding" id="Tha-8l-lF9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K6-yX-4n9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994.20289855072474" y="144.64285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="ZoP-OE-XjN">
             <objects>
-                <viewController id="gRc-Sg-Ol2" sceneMemberID="viewController">
+                <viewController id="gRc-Sg-Ol2" customClass="LandingViewController" customModule="fitink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VqE-ZG-1Vt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,6 +181,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Consultar salud"/>
+                                <connections>
+                                    <action selector="ConsultarSaludAction:" destination="gRc-Sg-Ol2" eventType="touchUpInside" id="gO1-OA-AS8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbm-mx-XoV">
                                 <rect key="frame" x="30" y="203.5" width="260" height="37"/>
@@ -180,6 +195,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Mi perfil"/>
+                                <connections>
+                                    <action selector="MiPerfilAction:" destination="gRc-Sg-Ol2" eventType="touchUpInside" id="Y2D-Jn-1yI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-E9-3co">
                                 <rect key="frame" x="30" y="327.5" width="260" height="37"/>
@@ -191,6 +209,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Cerrar sesión"/>
+                                <connections>
+                                    <segue destination="3Bq-Yg-BeA" kind="unwind" unwindAction="UnwindToAuthWithSegue:" id="JZ5-2r-TBf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t60-M1-yTm"/>
@@ -212,13 +233,14 @@
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STF-0F-ytR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3Bq-Yg-BeA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="993.75" y="868.30985915492954"/>
+            <point key="canvasLocation" x="1269" y="990"/>
         </scene>
         <!--Registro-->
         <scene sceneID="Nlr-Zv-POK">
             <objects>
-                <viewController id="dAx-Gj-zA7" sceneMemberID="viewController">
+                <viewController id="dAx-Gj-zA7" customClass="RegisterViewController" customModule="fitink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6oH-X1-Boz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
