@@ -30,6 +30,7 @@ Route::group(['middleware' => 'api'], function ($router) {
 
     Route::group(['prefix' => 'users'], function ($router) {
         Route::get('/health', 'UsersController@health');
+        Route::post('/update', 'UsersController@update');
     });
 
 });

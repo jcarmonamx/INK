@@ -48,4 +48,44 @@ class UsersController extends Controller
         }
 
     }
+
+    public function update (Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|between:2,100',
+            'fecha_nacimiento' => 'required|date_format:Y-m-d',
+            'telefono' => 'required|string',
+            'genero' => 'required|string',
+            'estatura' => 'required|integer',
+            'peso' => 'required|numeric',
+            'complexion' => 'required|string',
+            'fruta' => 'required|boolean',
+            'agua' => 'required|boolean',
+            'carne_roja' => 'required|boolean',
+            'cereales' => 'required|boolean',
+            'carne_blanca' => 'required|boolean',
+            'verduras' => 'required|boolean',
+            'azucares' => 'required|boolean',
+            'chatarra' => 'required|boolean',
+            'condicion' => 'required|string'
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'error' => $validator->errors()->first()
+            ], 400);
+        }
+
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $user->update($request->all());
+
+        $user->save();
+
+        return response()->json([
+            'message' => 'User successfully updated',
+            'user' => $user
+        ], 204);
+
+    }
 }
