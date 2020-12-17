@@ -30,7 +30,9 @@ class AuthController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return response()->json($validator->errors(), 422);
+            return response()->json([
+                'error' => $validator->errors()->first()
+            ], 422);
         }
 
         if (! $token = auth()->attempt($validator->validated())) {
