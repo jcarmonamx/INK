@@ -17,6 +17,7 @@
 		64400ACD258AF3BE00EF6336 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */; };
 		64400AD1258AF57700EF6336 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64400AD0258AF57700EF6336 /* LandingViewController.swift */; };
 		64B0199F258B6ED500F73BC6 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0199E258B6ED500F73BC6 /* DatePicker.swift */; };
+		64B019A2258B7E8600F73BC6 /* HealtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B019A1258B7E8600F73BC6 /* HealtViewController.swift */; };
 		64DEB89C258B2E2600026ABE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEB89B258B2E2600026ABE /* ProfileViewController.swift */; };
 		64E6BB2225888C5300053C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6BB2125888C5300053C9B /* AppDelegate.swift */; };
 		64E6BB2425888C5300053C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6BB2325888C5300053C9B /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		64400AD0258AF57700EF6336 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		64B0199E258B6ED500F73BC6 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		64B019A1258B7E8600F73BC6 /* HealtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealtViewController.swift; sourceTree = "<group>"; };
 		64DEB89B258B2E2600026ABE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		64E6BB1E25888C5300053C9B /* fitink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E6BB2125888C5300053C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				64400ACC258AF3BE00EF6336 /* RegisterViewController.swift */,
 				64400AD0258AF57700EF6336 /* LandingViewController.swift */,
 				64DEB89B258B2E2600026ABE /* ProfileViewController.swift */,
+				64B019A1258B7E8600F73BC6 /* HealtViewController.swift */,
 				64E6BB2725888C5300053C9B /* Main.storyboard */,
 				64E6BB2125888C5300053C9B /* AppDelegate.swift */,
 				64E6BB2325888C5300053C9B /* SceneDelegate.swift */,
@@ -246,6 +249,7 @@
 				64E6BB2225888C5300053C9B /* AppDelegate.swift in Sources */,
 				64400ABE258AE24300EF6336 /* ActivityIndicator.swift in Sources */,
 				6433DC3C258AD4E50015324D /* Responder.swift in Sources */,
+				64B019A2258B7E8600F73BC6 /* HealtViewController.swift in Sources */,
 				6433DC32258ACDFA0015324D /* TextField.swift in Sources */,
 				64E6BB2425888C5300053C9B /* SceneDelegate.swift in Sources */,
 			);

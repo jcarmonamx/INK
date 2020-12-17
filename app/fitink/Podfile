@@ -9,4 +9,8 @@ target 'fitink' do
 
   # Alamo Fire
   pod 'Alamofire', '~> 4.9.1'
+
+  # Reproductor
+  pod 'YoutubePlayer-in-WKWebView'
+
 end
